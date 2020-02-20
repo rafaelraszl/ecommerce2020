@@ -16,7 +16,7 @@ class ComposerStaticInit85c4d0cd90a6eb8c69e22773cb649042
     public static $prefixDirsPsr4 = array (
         'Mekhet\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mekhetbr/php-classes/src',
+            0 => __DIR__ . '/..' . '/mekhetbr/classes/src',
         ),
     );
 
