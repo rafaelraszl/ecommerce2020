@@ -5,6 +5,7 @@ require_once("vendor/autoload.php");
 use \Slim\Slim;
 use \Mekhet\Page;
 use \Mekhet\PageAdmin;
+use \Mekhet\Model\User;
 
 
 $app = new \Slim\Slim();
@@ -27,6 +28,27 @@ $app->get('/admin', function() {
     
     $page->setTpl("index");
 
+});
+
+// ROTA TELA LOGIN ADM
+$app->get('/admin/login', function() {
+    
+	$page = new PageAdmin([
+		"header"=>false,
+		"footer"=>false
+	]);
+    
+    $page->setTpl("login");
+
+});
+
+// ROTA LOGIN ADM
+$app->post('/admin/login', function() {
+
+	User::login($_POST["login"], $_POST["password"]);
+
+	header("Location: /admin");
+	exit;
 });
 
 $app->run();
