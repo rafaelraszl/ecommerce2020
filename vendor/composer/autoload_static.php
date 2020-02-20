@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit85c4d0cd90a6eb8c69e22773cb649042
 {
     public static $prefixLengthsPsr4 = array (
-        'C' => 
+        'M' => 
         array (
-            'CicloVittal\\' => 12,
+            'Mekhet\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'CicloVittal\\' => 
+        'Mekhet\\' => 
         array (
             0 => __DIR__ . '/..' . '/mekhetbr/php-classes/src',
         ),
