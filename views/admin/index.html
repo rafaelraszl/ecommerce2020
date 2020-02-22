@@ -2,8 +2,11 @@
 <div class="content-wrapper">
 <!-- Content Header (Page header) -->
 <section class="content-header">
+	<h1 style="color: #4b646f">
+    Olá <b>bem vindo</b>!
+  </h1>
   <h1>
-    Mekhet Store
+  	Mekhet Store
     <small>Administração</small>
   </h1>
   <ol class="breadcrumb">
